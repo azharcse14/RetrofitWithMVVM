@@ -1,4 +1,11 @@
 package com.azhar.retrofitwithmvvm.view_model
 
-class MainViewModelFactory {
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.azhar.retrofitwithmvvm.model.repository.QuoteRepository
+
+class MainViewModelFactory(private val repository: QuoteRepository):ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return MainViewModel(repository) as T
+    }
 }

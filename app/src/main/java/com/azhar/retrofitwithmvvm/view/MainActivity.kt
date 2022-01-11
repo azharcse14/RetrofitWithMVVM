@@ -11,7 +11,6 @@ import com.azhar.retrofitwithmvvm.model.api.RetrofitHelper
 import com.azhar.retrofitwithmvvm.model.repository.QuoteRepository
 import com.azhar.retrofitwithmvvm.view_model.MainViewModel
 import com.azhar.retrofitwithmvvm.view_model.MainViewModelFactory
-import retrofit2.create
 
 class MainActivity : AppCompatActivity() {
 
